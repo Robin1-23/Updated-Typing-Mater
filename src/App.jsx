@@ -110,7 +110,7 @@ function App() {
               scale: 3,
             }}
           >
-            Type Master ⌨️
+            TypeRush ⌨️
           </motion.h1>
 
           {/* Timer */}
@@ -125,7 +125,9 @@ function App() {
           {/* Word Box */}
           
 
-          <div className="mt-6 h-45 sm:h-45 w-full max-w-3xl px-2 py-3 border-2 border-gray-600 rounded-xl  bg-gray-800 text-white flex flex-wrap gap-2">
+          <div className="mt-6 h-45 sm:h-45 w-full max-w-3xl px-2 py-3 border-2 border-gray-600 rounded-xl  bg-gray-800 text-white flex flex-wrap gap-2
+         shadow-[0_4px_20px_rgba(255,255,255,0.1)]   
+          ">
             {generatedWords.map((eachWord, index) => (
               <span
                 key={index}
@@ -162,7 +164,9 @@ function App() {
             <motion.button
               className="px-6 py-2 bg-green-500 hover:bg-green-600 text-black font-semibold rounded-lg transition-all duration-300"
               onClick={startTimer}
-              animate={{
+              
+
+              whileHover={{
                 scale: 1.2,
               }}
             >
@@ -171,7 +175,7 @@ function App() {
             <motion.button
               className="px-6 py-2 bg-red-500 hover:bg-red-600 text-black font-semibold rounded-lg transition-all duration-300"
               onClick={takeTestAgain}
-              animate={{
+              whileHover={{
                 scale: 1.2,
               }}
             >
